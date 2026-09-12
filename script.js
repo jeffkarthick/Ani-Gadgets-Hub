@@ -1,0 +1,2 @@
+function order(product){const msg=`Hi ANI Gadgets Hub 👋%0A%0AI’m interested in: ${encodeURIComponent(product)}%0A%0APlease share availability and ordering details.`;window.open(`https://wa.me/916380455880?text=${msg}`,'_blank')}
+document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;document.querySelectorAll('.product').forEach(p=>p.style.display=(f==='all'||p.dataset.category===f)?'block':'none')}));
